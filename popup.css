@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+* {
+    border-radius: 10px;
+}
+
+:root {
+    --light: #fff7f2;
+    --dark: #37312b;
+    --darker: #201e1c;
+}
+
+body {
+    font-family: 'Anonymous Pro', monospace;
+    width: 400px;
+    height: 500px;
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 4px;
+}
+
+.main-switch {
+    width: 25%;
+    margin: auto;
+    height: 40px;
+}
+
+.switch, .dark-switch {
+    position: absolute;
+    display: inline-block;
+}
+
+.switch {
+    width: 168px;
+    height: 90px;
+    margin-top: -172px;
+    margin-left: -52px;
+}
+
+.dark-switch {
+    width: 50px;
+    height: 25px;
+    margin-top: -300px;
+    margin-left: 166px;
+}
+ 
+.switch input, .dark-switch input {
+    visibility: hidden;
+}
+
+.slider, .dark-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f96900;
+    transition: 0.2s ease-in;
+    border-radius: 45px;
+}
+
+.dark-slider {
+    background-color: var(--dark)
+}
+
+.dark-slider2 {
+    cursor: pointer;
+}
+
+.slider:before, .dark-slider:before, .dark-slider2:before {
+    position: absolute;
+    content: "";
+    height: 72px;
+    width: 72px;
+    left: 8px;
+    bottom: 8px;
+    background-color: var(--light);
+    border-radius: 50%;
+    transition: 0.2s ease-in;
+}
+
+.dark-slider:before {
+    height: 17px;
+    width: 17px;
+    left: 4px;
+    bottom: 4px;
+}
+
+.dark-slider2:before {
+    height: 12px;
+    width: 12px;
+    left: 35px;
+    bottom: 9px;
+    background-color: var(--dark);
+}
+
+input:checked + .slider {
+    background-color: lightseagreen;
+}
+
+input:checked + .dark-slider {
+    background-color: var(--dark);
+}
+
+input:checked + .slider:before {
+    transform: translateX(80px);
+}
+
+input:checked + .dark-slider:before {
+    transform: translateX(25px);
+    background-color: var(--light);
+}
+
+#todo, #pomodoro-timer {
+    width: 40%;
+    height: 30px;
+}
+
+#todo {
+    float: left;
+    margin-left: 8px;
+}
+
+#pomodoro-timer {
+    float: right;
+    margin-top: -40px;
+    margin-right: 16px;
+}
+
+.switch-label {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    font-weight: bold;
+    background-color: var(--dark);
+    color: var(--light);
+    font-size: 16px;
+    padding: 4px;
+}
+
+#timer {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+img {
+    pointer-events: none;
+}
+
+::selection {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+button {
+    font-family: 'Anonymous Pro', monospace;
+    border: none;
+    background-color: var(--dark);
+    box-shadow: 3px 3px var(--darker);
+    color: var(--light);
+    transition: 0.2s;
+    padding: 8px;
+    font-weight: bold;
+    width: 60%;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 20%;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#add-task-button {
+    width: 20%;
+    padding: 8px;
+    height: auto;
+    margin: 0;
+}
+
+#pomodoro, #todo-list {
+    width: 40%;
+    display: inline-block;
+    padding: 4px;
+}
+
+#todo-list {
+    margin: 8px;
+}
+
+#pomodoro {
+    float: right;
+    margin-right: 8px;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 2s;
+    text-decoration: line-through;
+    color: rgb(0, 200, 0);
+}
+
+#task-input {
+    font-family: 'Anonymous Pro', monospace;
+    margin-left: -4px;
+    background-color: var(--dark);
+    color: var(--light);
+    font-weight: bold;
+    width: 73%;
+    font-size: larger;
+    height: 28px;
+    border: #37312b 2px solid;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+#task-input:focus {
+    border: 2px transparent solid;
+    box-shadow: 0 0 2px 2px var(--dark);
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: medium;
+    padding-bottom: 0;
+    margin-left: -10px;
+}
+
+.opac-down {
+    transition: 0.8s;
+    opacity: 0.4;
+    transform: scale(0.8);
+}
+
+.opac-up {
+    transition: 0.4s;
+    opacity: 1;
+}

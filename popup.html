@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>name...</title>
+    <script type="module" src="popup.js"></script>
+</head>
+    <body>
+        <img src="assets/logo.png" width="100%" id="image">
+        <div id="todo"><label class="switch-label">To-do List</label></div>
+        <div class="main-switch">
+            <label class="switch">
+                <input type="checkbox" id="slider-switch">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <div id="pomodoro-timer"><label class="switch-label">Pomodoro Timer</label></div>
+        <div id="todo-list">
+            <div class="main-page">
+                <div class="contents">
+                    <form>
+                        <input type="text" id="task-input" placeholder=" Add a task...">
+                        <button type="submit" id="add-task-button">+</button>
+                    </form>
+                    <ul id="task-list"></ul>
+                </div>
+            </div>
+        </div>
+        <div id="pomodoro">
+            <div id="timer">25:00</div>
+            <button id="start">Start</button><br>
+            <button id="pause">Pause</button><br>
+            <button id="reset">Reset</button><br>
+        </div>
+        <label class="dark-switch">
+            <input type="checkbox" id="dark-slider-switch">
+            <span class="dark-slider"></span>
+            <input type="checkbox" id="dark-slider-switch">
+            <span class="dark-slider2"></span>
+        </label>
+        <script src="storage.js"></script>
+        <script src="background.js"></script>
+        <script src="todo_list.js"></script>
+    </body>
+</html>

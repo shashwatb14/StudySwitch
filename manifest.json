@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "StudySwitch",
+    "version": "1.0",
+    "description": "Introducing StudySwitch - the ultimate productivity solution for high school and college students. Now easily accessible on your Chrome taskbar.",
+    "action": {
+        "default_icon": {              
+        "16": "assets/icon16.png",
+        "24": "assets/icon24.png",
+        "32": "assets/icon32.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+      },
+        "default_title": "StudySwitch",
+        "default_popup": "popup.html"
+  },
+  
+  "permissions": [
+    "storage"
+  ]
+}
