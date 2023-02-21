@@ -41,4 +41,4 @@ Through the challenges and frustrations of creating StudySwitch, we collectively
 
 ## What's next for StudySwitch
 ---
-StudySwitch has a lot planned for the future, including API integration. Specifically, we are working on integrating Spotify API for music and ambient noise, OpenAI API for text summarization, Grammarly API for spell and grammar check, a built-in AD Blocker, speech-to-text for note-taking during lectures and text-to-speech integration on websites. These are all things we wanted to implement during the hackathon, however, we aren't able to accomplish this within the timeframe. 
+StudySwitch has a lot planned for the future, including API integration. Specifically, we are working on integrating Spotify API for music and ambient noise, OpenAI API for text summarization, Grammarly API for spell and grammar check, a built-in Ad Blocker, speech-to-text for note-taking during lectures and text-to-speech integration on websites. These are all things we wanted to implement during the hackathon, however, we aren't able to accomplish this within the timeframe. 
